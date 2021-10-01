@@ -24,6 +24,7 @@ namespace Bowling.Test
         
         [InlineData(9,1,10,0,8,1,8,2,6,3,7,2,7,3,7,2,9,1,9,1,8,145)]
         [InlineData(6,4,4,4,8,1,8,2,6,3,7,3,9,1,9,0,9,1,10,10,8,151)]
+        [InlineData(5,3,2,3,4,5,10,0,9,1,8,1,4,5,10,0,8,1,10,6,4,126)]
         public void bowling_score_theory(int a1, int a2, int b1, int b2, int c1, int c2, int d1, int d2, int e1, int e2,
                                          int f1, int f2, int g1, int g2, int h1, int h2, int i1, int i2, int j1, int j2, int j3, int expectedResult)
         
@@ -33,6 +34,7 @@ namespace Bowling.Test
             var game = new BowlingGame(frameList);
 
             // Act
+            var Result1 = game.GetScore();
             var actualResult = game.GetScore();
 
             // Assert
