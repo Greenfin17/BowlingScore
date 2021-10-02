@@ -92,6 +92,7 @@ namespace Bowling.Test
         [InlineData("9","1","10","0","8","1","8","2",58)]
         [InlineData("9","/","X","0","8","1","8","/",58)]
         [InlineData("7","3","9","1","8","1","10","0",56)]
+        [InlineData("7","/","9","/","8","1","X","0",56)]
         // with invalid input
         [InlineData("7","/","9","/","8","1","X","2",56)]
         // with invalid input
